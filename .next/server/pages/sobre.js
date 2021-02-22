@@ -2949,7 +2949,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 
-var _jsxFileName = "C:\\Users\\Windows\\Desktop\\nextjs\\pages\\sobre.js";
+var _jsxFileName = "C:\\Users\\Windows\\Desktop\\nextjs\\testes-next-js\\pages\\sobre.js";
 
 
 function Sobre() {
