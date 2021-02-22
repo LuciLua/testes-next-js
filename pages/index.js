@@ -9,7 +9,13 @@ function Home(){
     <a>Sobre</a>
     </Link>
     <img src="https://i.imgur.com/yVKEBjn.png"></img>
+
+    <Link href="/tempo">
+    <a>Tempo</a>
+    </Link>
+    
     </div>)
+    
 }
 
 export default Home
