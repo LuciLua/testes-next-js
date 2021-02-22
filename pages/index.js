@@ -8,6 +8,7 @@ function Home(){
     <Link href="/sobre">
     <a>Sobre</a>
     </Link>
+    <img src="https://i.imgur.com/yVKEBjn.png"></img>
     </div>)
 }
 
