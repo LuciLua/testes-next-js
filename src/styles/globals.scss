@@ -1,0 +1,27 @@
+*::before, *, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --footerHeaderBackgroundColor: rgb(240, 240, 240);
+    --wireframeBackgroundColor: rgba(23, 186, 235, 0.24);
+}
+
+html, body{
+    height: 100%;
+
+    font-family: 'Lexend', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    min-height: calc(100vh - 80px - 80px);
+    width: 100%;
+}
+
