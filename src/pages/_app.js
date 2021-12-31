@@ -1,10 +1,12 @@
 import Footer from "../components/Footer"
 import Header from "../components/Header"
+import { NomeProvider } from "../context/NomeContext"
 import '../styles/globals.scss'
 
 function App({ Component, pageProps }) {
     return (
         <>
+        <NomeProvider>
             <div className="container">
                 <header>
                     <Header />
@@ -16,6 +18,7 @@ function App({ Component, pageProps }) {
                     <Footer />
                 </footer>
             </div>
+        </NomeProvider>
         </>
     )
 }

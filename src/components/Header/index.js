@@ -3,9 +3,21 @@ import Link from 'next/link'
 import styles from './header.module.scss'
 import classNames from 'classnames'
 
+import { useNome } from '../../context/NomeContext'
+
 function Header() {
+
+    const { nome, setNome } = useNome();
+
+    const initNome = () => {
+        if(!nome){
+            return 'Account'
+        } else {
+            return nome
+        }
+    }
+
     return (
-        <>
             <div className={classNames(styles.container)}>
                 <div className={classNames(styles.content)}>
                     <h1 id='h1Header'>
@@ -29,7 +41,7 @@ function Header() {
                         <Link href='/account'>
                             <a>
                                 <li>
-                                    Account
+                                    {initNome()}
                                 </li>
                                 <div className={styles.imgProfile}>
                                     <Image
@@ -46,7 +58,6 @@ function Header() {
                     <div className={styles.menu}>Menu</div>
                 </div>
             </div>
-        </>
     )
 }
 

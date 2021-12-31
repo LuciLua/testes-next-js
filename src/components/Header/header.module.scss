@@ -50,8 +50,10 @@
 
                 &:nth-child(3) {
                     // background-color: red;
-                    padding-right: 50px;
+                    padding-right: 5px;
                     border: 1px solid rgb(38, 38, 38);
+                    height: 40px;
+
                 }
 
                 .closeMenu {
@@ -65,11 +67,13 @@
                 .imgProfile {
                     border-radius: 60%;
                     background-color: #fff;
+
                     width: 30px;
                     height: 30px;
 
-                    position: absolute;
-                    right: 10px;
+                    margin-left: 8px;
+
+                    position: relative;
 
                     overflow: hidden;
                 }

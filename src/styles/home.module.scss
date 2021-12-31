@@ -15,9 +15,19 @@
         height: 100%;
 
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
 
-        background-color: var(--wireframeBackgroundColor);
+        // background-color: var(--wireframeBackgroundColor);
+
+
+        h1{
+            margin-bottom: 20px;
+        }
+
+        p{
+            line-height: 2;
+        }
     }
 }
