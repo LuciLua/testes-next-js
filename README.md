@@ -23,8 +23,8 @@ These are my goals for now, I believe that from small tests to small tests one d
 - [x] Routes
 - [x] Consume API
 - [ ] Authentication
-- [ ] Share data between components
-- [ ] ContextAPI
+- [x] Share data between components
+- [x] ContextAPI
 
 ## 🚀 How to start
 
