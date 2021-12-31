@@ -2,6 +2,7 @@ import React, { createContext, useContext, useState } from "react";
 
 const NomeContext = createContext();
 
+
 export const NomeProvider = ({ children }) => {
     const [nome, setNome] = useState('');
 

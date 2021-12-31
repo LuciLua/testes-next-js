@@ -12,7 +12,14 @@ function About() {
                     <p>
                         login page
                     </p>
-                        <input placeholder='user' value={nome} onChange= { e => setNome(e.target.value)} />
+                        <input placeholder='user'/>
+                        <button onClick={() => {
+
+                            const btnValue = document.querySelector('input').value
+                            setNome(btnValue)
+                            nome = btnValue
+
+                        }}>Login</button>
                 </div>
             </div>
         </>
