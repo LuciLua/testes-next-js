@@ -2,8 +2,10 @@ import Footer from "../components/Footer"
 import Header from "../components/Header"
 import { NomeProvider } from "../context/NomeContext"
 import '../styles/globals.scss'
+import React, {useRef, useLayoutEffect} from 'react'
 
 function App({ Component, pageProps }) {
+
     return (
         <>
         <NomeProvider>

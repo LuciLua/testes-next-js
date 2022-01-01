@@ -23,10 +23,12 @@
     width: 100%;
     height: 100%;
 
+    margin-top: 40px;
+
     // border: 1px solid red;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -36,12 +38,22 @@
 
     position: relative;
 
-    // background-color: var(--wireframeBackgroundColor);
+    // background-color: rgba(255, 0, 0, 0.233);
 
-    .leftContent {
-      margin-right: auto;
+    .apresentation {
+      //   background-color: var(--wireframeBackgroundColor);
 
-      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      width: 100%;
+
+      .leftContent {
+        margin-right: auto;
+
+        position: relative;
 
         // background-color: rgba(255, 255, 255, 0.172);
 
@@ -49,56 +61,54 @@
 
         min-height: 50vh;
 
-        
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
 
+        button {
+          background-color: rgb(66, 126, 255);
+          border: none;
+          border-radius: 40px;
+          padding: 10px 20px;
+          color: #fff;
 
-      button {
-        background-color: rgb(66, 126, 255);
-        border: none;
-        border-radius: 40px;
-        padding: 10px 20px;
-        color: #fff;
+          font-family: "Lexend", sans-serif;
+          font-weight: 400;
+          font-size: 18px;
 
-        font-family: "Lexend", sans-serif;
-        font-weight: 400;
-        font-size: 18px;
+          margin-top: 20px;
 
-        margin-top: 20px;
+          cursor: pointer;
 
-        cursor: pointer;
+          width: fit-content;
+        }
 
-        width: fit-content;
+        h1 {
+          margin-bottom: 20px;
+        }
+
+        p {
+          line-height: 2;
+          max-width: 600px;
+        }
       }
+      .rightContent {
+        position: relative;
 
-      h1 {
-        margin-bottom: 20px;
-      }
+        margin-left: auto;
+        //   background-color: rgba(178, 34, 34, 0.33);
 
-      p {
-        line-height: 2;
-        max-width: 600px;
-      }
-    }
-    .rightContent {
-      position: relative;
+        min-width: 50%;
+        min-height: 50vh;
 
-      margin-left: auto;
-    //   background-color: rgba(178, 34, 34, 0.33);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
 
-      min-width: 50%;
-      min-height: 50vh;
+        padding: 50px;
 
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-
-      padding: 50px;
-
-      .cubeImg{
+        .cubeImg {
           width: 300px;
           height: 220px;
 
@@ -106,49 +116,179 @@
           background-color: #ffffffc6;
           box-shadow: 4px 6px 23px rgba(0, 0, 0, 0.337);
           background-image: radial-gradient(
-            at 10% 90%,
-            rgba(9, 94, 252, 0.487) 0,
-            transparent 50%
-          ),
-          radial-gradient(at 50% 0%, rgba(255, 150, 202, 0.452) 0, transparent 50%),
-          radial-gradient(at 100% 0%, rgba(238, 165, 199, 0.494) 0, transparent 50%);
+              at 10% 90%,
+              rgba(9, 94, 252, 0.487) 0,
+              transparent 50%
+            ),
+            radial-gradient(
+              at 50% 0%,
+              rgba(255, 150, 202, 0.452) 0,
+              transparent 50%
+            ),
+            radial-gradient(
+              at 100% 0%,
+              rgba(238, 165, 199, 0.494) 0,
+              transparent 50%
+            );
+        }
+      }
+    }
+
+    .aboutContainer {
+      display: flex;
+      .aboutBigText {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        align-items: center;
+        line-height: 2;
+
+        h1 {
+          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+            sans-serif;
+          font-size: 50px;
+
+          margin-right: 40px;
+        }
+      }
+
+      .cards {
+        //   background-color: rgba(116, 22, 22, 0.301);
+        width: 50%;
+        margin-left: auto;
+
+        background-image: radial-gradient(
+          at 50% 50%,
+          rgba(39, 59, 114, 0.35) 0,
+          transparent 40%
+        );
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .card {
+          min-width: 300px;
+          max-height: 200px;
+
+          max-width: 700px;
+
+          background-color: rgba(255, 255, 255, 0.027);
+          border: 1px solid rgba(170, 170, 170, 0.248);
+
+          margin: 20px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+
+          border-radius: 10px;
+
+          transform: scale(100%);
+          transition: 0.1s;
+
+          position: relative;
+
+          padding: 20px;
+
+          &:hover {
+            box-shadow: 0 0 20px rgba(16, 16, 19, 0.967);
+            transform: scale(102%);
+            transition: 0.1s;
+            border: 1px solid rgba(170, 170, 170, 0.466);
+          }
+
+          .titleContentCard {
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            font-family: "Open Sans";
+
+            h1 {
+              font-size: 16px;
+              font-weight: 800;
+            }
+
+            p {
+              font-weight: 300;
+            }
+          }
+          .iconeCard {
+            background-color: #4010ff;
+            width: 55px;
+            min-width: 55px;
+            height: 55px;
+            min-height: 55px;
+            border-radius: 100%;
+
+            margin-right: 30px;
+          }
+        }
       }
     }
   }
 }
 
 @media only screen and (max-width: 700px) {
+  .container {
+    .content {
+      .apresentation {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-    .container{
-        .content{
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        max-width: 100%;
 
-            .leftContent{
-                text-align: center;
-                
-                justify-content: center;
-                display: flex;
-                align-items: center;
+        .leftContent {
+          text-align: center;
 
-                padding: 0;
-                width: 100%;
-                min-height: 40vh;
-                
-                button{
-                    margin: 20px auto;
-                }
-            }
-            .rightContent{
-                justify-content: center;
-                display: flex;
-                align-items: center;
+          justify-content: center;
+          display: flex;
+          align-items: center;
 
-                width: 100%;
-                min-height: 40vh;
+          padding: 0;
+          width: 100%;
+          min-height: 40vh;
 
-            }
+          button {
+            margin: 20px auto;
+          }
         }
+        .rightContent {
+          justify-content: center;
+          display: flex;
+          align-items: center;
+
+          width: 100%;
+          min-height: 40vh;
+        }
+      }
+      .aboutContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .aboutBigText {
+          width: 100%;
+          text-align: center;
+
+          margin: 30px 0;
+
+
+          h1 {
+            margin: 0;
+            line-height: 1.5;
+            font-size: 40px;
+          }
+        }
+        .cards {
+          width: 100%;
+        }
+      }
     }
+  }
 }
