@@ -18,7 +18,7 @@
 These are my goals for now, I believe that from small tests to small tests one day I will be able to build something big, or another small real project that uses some of these topics extremely well.
 
 - [x] Create an application with React and NextJS from scratch
-- [ ] Responsive design integrating components well
+- [x] Responsive design integrating components well
 - [x] Components
 - [x] Routes
 - [x] Consume API
@@ -75,4 +75,10 @@ yarn build
 ```bash
 yarn start
 ```
+
+## Preview
+
+So far, this is the preview, but you can check it out at [this updated link](https://www.testesnextjs.ga/)
+
+<img src="print.png" align="center"/>
 
