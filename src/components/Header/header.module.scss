@@ -18,7 +18,9 @@
 
     .content {
         width: 100%;
-        max-width: 1000px;
+        max-width: 1500px;
+
+        // background-color: #fdfdfd3a;
 
         display: flex;
         align-items: center;
@@ -186,7 +188,7 @@
             .menu {
                 border: 2px solid #fdfdfd;
                 color: #fff;
-                
+
                 display: flex;
                 justify-content: center;
                 align-items: center;

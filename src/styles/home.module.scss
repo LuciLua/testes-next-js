@@ -46,13 +46,14 @@
         // background-color: rgba(255, 255, 255, 0.172);
 
         min-width: 50%;
+
         min-height: 50vh;
 
+        
       display: flex;
       justify-content: center;
       flex-direction: column;
 
-      padding-left: 50px;
 
       button {
         background-color: rgb(66, 126, 255);
@@ -67,6 +68,8 @@
 
         margin-top: 20px;
 
+        cursor: pointer;
+
         width: fit-content;
       }
 
@@ -76,6 +79,7 @@
 
       p {
         line-height: 2;
+        max-width: 600px;
       }
     }
     .rightContent {
