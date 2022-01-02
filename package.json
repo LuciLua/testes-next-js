@@ -12,10 +12,14 @@
     "next": "^12.0.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "sass": "^1.45.1",
-    "styled-components": "^5.3.3"
+    "sass": "^1.45.1"
   },
   "resolutions": {
     "styled-components": "^5"
+  },
+  "devDependencies": {
+    "eslint": "8.6.0",
+    "eslint-config-next": "12.0.7",
+    "prettier": "2.5.1"
   }
 }
