@@ -12,7 +12,6 @@
 <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
 <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white">
 
-
 ## ✨ Objectives
 
 These are my goals for now, I believe that from small tests to small tests one day I will be able to build something big, or another small real project that uses some of these topics extremely well.
@@ -76,9 +75,22 @@ yarn build
 yarn start
 ```
 
+## 👥 Making code concise if you make changes
+
+> check if there is anything to change
+
+```bash
+yarn lint
+```
+
+> still using prettier, have it format the code automatically
+
+```bash
+yarn format
+```
+
 ## Preview
 
 So far, this is the preview, but you can check it out at [this updated link](https://www.testesnextjs.ga/)
 
 <img src="print.png" align="center"/>
-
