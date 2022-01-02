@@ -1,0 +1,118 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  min-height: calc(100vh - 80px - 80px);
+
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 0% 0%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+
+  position: relative;
+
+  padding: 50px;
+
+  .content {
+    width: 100%;
+    height: 100%;
+
+    margin-top: 40px;
+
+    // border: 1px solid red;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 1500px;
+
+    color: #fff;
+
+    position: relative;
+
+    // background-color: rgba(255, 0, 0, 0.233);
+
+    .hooksColumns{
+
+      position: relative;
+      max-width: 100%;
+
+      h1{
+        margin: 40px 0;
+        width: 100%;
+        max-width: 1000px;
+        padding-bottom: 10px;
+        color: #f2f2f2;
+      }
+      
+      p{
+        max-width: 1000px;
+        line-height: 2;
+        text-indent: 50px;
+        color: #787680;
+        text-align: justify;
+
+        display: flex;
+        flex-direction: column;
+
+        position: relative;
+      }
+
+      .codes{
+        margin-top: 35px;
+        display: flex;
+        flex-direction: column;
+
+        
+        text-indent: 0;
+        
+        box-shadow: 0 0 10px rgba(2, 2, 2, 0.212);
+        background-color: rgba(25, 25, 28, 0.486);
+        
+        border-radius: 8px;
+        
+        padding: 30px;
+        
+        overflow-x: scroll;
+        
+        max-width: 100%;
+        position: relative;
+
+
+        &::-webkit-scrollbar{
+          height: 3px;
+          background-color: #3a393d;
+          border-radius: 30px;
+        }
+        &::-webkit-scrollbar-thumb{
+          border-radius: 30px;
+          background-color: #1e1d1f;
+        }
+        
+        code{
+          color: #836f83;
+          margin-top: 3px;
+
+          min-width: 700px;
+
+          &.codeWithIndent{
+            text-indent: 30px;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+}

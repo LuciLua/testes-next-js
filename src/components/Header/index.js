@@ -10,9 +10,9 @@ function Header() {
   const containerRef = useRef();
   const navigation = useRef();
 
-  useLayoutEffect(() => {
-    console.log(containerRef.current);
-  });
+  // useLayoutEffect(() => {
+  //   console.log(containerRef.current);
+  // });
 
   const { nome } = useNome();
 
@@ -43,6 +43,11 @@ function Header() {
           <Link href="/login">
             <a>
               <li>Login</li>
+            </a>
+          </Link>
+          <Link href="/learn">
+            <a>
+              <li>Learn</li>
             </a>
           </Link>
           <Link href="/account">

@@ -59,7 +59,7 @@
 
         // background-color: rgba(0, 0, 139, 0.207);
 
-        &:nth-child(3) {
+        &:last-child {
           // background-color: red;
           padding-right: 5px;
           border: 1px solid rgb(242, 242, 242);
@@ -179,7 +179,7 @@
             background-color: #5a5a5a6d;
           }
 
-          &:nth-child(3) {
+          &:last-child {
             margin: 0;
             padding: 0;
             height: 100px;
