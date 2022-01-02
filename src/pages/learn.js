@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styles from "../styles/learn.module.scss";
 
 function Learn() {
@@ -19,7 +20,7 @@ function Learn() {
         }
 
         return (
-            <div>
+            <div className={styles.contador}>
                 <div>{contador}</div>
                 <button onClick={adicionarContador}>Adicionar</button>
             </div>
@@ -39,12 +40,12 @@ function Learn() {
                             </ConvertToLowerCase>
                             <br />
                             <div className={styles.codes}>
-                            <code>{`function ConvertToLowerCase(props) {`}</code>
-                            <code className={styles.codeWithIndent}>{`const textoInserido = props.children`}</code>
-                            <code className={styles.codeWithIndent}>{`const result = textoInserido.toLowerCase()`}</code>
-                            <code className={styles.codeWithIndent}>{`return result`}</code>
-                            <code>{`}`}</code>
-                            <code>{`<ConvertToLowerCase> THIS TEXT WILL BE CONVERTED FOR TO THE LOWER CASE </ConvertToLowerCase>`}</code>
+                                <code>{`function ConvertToLowerCase(props) {`}</code>
+                                <code className={styles.codeWithIndent}>{`const textoInserido = props.children`}</code>
+                                <code className={styles.codeWithIndent}>{`const result = textoInserido.toLowerCase()`}</code>
+                                <code className={styles.codeWithIndent}>{`return result`}</code>
+                                <code>{`}`}</code>
+                                <code>{`<ConvertToLowerCase> THIS TEXT WILL BE CONVERTED FOR TO THE LOWER CASE </ConvertToLowerCase>`}</code>
                             </div>
                         </p>
                         <h1>
@@ -56,6 +57,25 @@ function Learn() {
                         <p>
                             I have a counter, the functions are created with basic of Javascript, but... always that the on click in some element the variable is updated only in console, but not in renderization of the page... Well we can use the Hook useState(), this hook will alert your browser when it necessary update some variable.
                         </p>
+                        <p>
+                            <div className={styles.codes}>
+                                <code>{`function Contador() {`}</code>
+                                <code className={styles.codeWithIndent}>{`const [contador, setContador] = useState(1);`}</code>
+                                <code className={styles.codeWithIndent}>{`function adicionarContador() {`}</code>
+                                <code className={styles.codeWithTwoIndent}>{`setContador(contador + 1)`}</code>
+                                <code className={styles.codeWithIndent}>{`}`}</code>
+                                <code className={styles.codeWithIndent}>{`return (`}</code>
+                                <code className={styles.codeWithIndent}>{`<div>`}</code>
+                                <code className={styles.codeWithTwoIndent}>{`<div>{contador}</div>`}</code>
+                                <code className={styles.codeWithTwoIndent}>{`<button onClick={adicionarContador}>Adicionar</button>`}</code>
+                                <code className={styles.codeWithIndent}>{`</div>`}</code>
+                                <code className={styles.codeWithIndent}>{`)`}</code>
+                                <code>{`}`}</code>
+                            </div>
+                        </p>
+                        <h2>
+                            Result: <Contador />
+                        </h2>
                     </div>
                 </div>
             </div>

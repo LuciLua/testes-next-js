@@ -40,20 +40,64 @@
 
     // background-color: rgba(255, 0, 0, 0.233);
 
-    .hooksColumns{
-
+    .hooksColumns {
       position: relative;
       max-width: 100%;
 
-      h1{
+      h1 {
         margin: 40px 0;
         width: 100%;
         max-width: 1000px;
         padding-bottom: 10px;
         color: #f2f2f2;
       }
-      
-      p{
+
+      h2 {
+        margin: 20px 0;
+
+        .contador {
+          display: flex;
+          margin-top: 20px;
+
+          padding: 30px;
+
+          box-shadow: 0 0 10px rgba(2, 2, 2, 0.212);
+          background-color: rgba(25, 25, 28, 0.486);
+
+          border-radius: 8px;
+
+          justify-content: space-around;
+
+          button{
+            padding: 10px 20px;
+            border-radius: 30px;
+            background-color: transparent;
+
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 800;
+
+            border:  2px solid  rgb(40, 55, 63);
+            color: rgb(83, 97, 105);
+
+
+            cursor: pointer;
+
+
+            &:hover{
+              border-color:rgb(56, 79, 92);
+              color: rgb(56, 79, 92);
+            }
+            
+            &:hover{
+              border-color:rgb(72, 96, 110);
+              color: rgb(72, 96, 110);
+            }
+
+          }
+        }
+      }
+
+      p {
         max-width: 1000px;
         line-height: 2;
         text-indent: 50px;
@@ -66,53 +110,52 @@
         position: relative;
       }
 
-      .codes{
+      .codes {
         margin-top: 35px;
         display: flex;
         flex-direction: column;
 
-        
         text-indent: 0;
-        
+
         box-shadow: 0 0 10px rgba(2, 2, 2, 0.212);
         background-color: rgba(25, 25, 28, 0.486);
-        
+
         border-radius: 8px;
-        
+
         padding: 30px;
-        
+
         overflow-x: scroll;
-        
+
         max-width: 100%;
         position: relative;
 
-
-        &::-webkit-scrollbar{
+        &::-webkit-scrollbar {
           height: 3px;
           background-color: #3a393d;
           border-radius: 30px;
         }
-        &::-webkit-scrollbar-thumb{
+        &::-webkit-scrollbar-thumb {
           border-radius: 30px;
           background-color: #1e1d1f;
         }
-        
-        code{
+
+        code {
           color: #836f83;
           margin-top: 3px;
 
           min-width: 700px;
 
-          &.codeWithIndent{
+          &.codeWithIndent {
             text-indent: 30px;
+          }
+          &.codeWithTwoIndent {
+            text-indent: 60px;
           }
         }
       }
     }
-
   }
 }
 
 @media only screen and (max-width: 700px) {
-
 }
