@@ -21,9 +21,10 @@ These are my goals for now, I believe that from small tests to small tests one d
 - [x] Components
 - [x] Routes
 - [x] Consume API
-- [ ] Authentication
 - [x] Share data between components
 - [x] ContextAPI
+- [ ] Authentication
+- [ ] Hooks react
 
 ## 🚀 How to start
 

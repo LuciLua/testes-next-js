@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-
 export default class myDocument extends Document {
   render() {
     return (
@@ -16,7 +15,7 @@ export default class myDocument extends Document {
               href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;600&display=swap"
               rel="stylesheet"
             />
-            <title>ContextAPI</title>
+            <title>My Studies </title>
           </head>
         </Head>
         <body>

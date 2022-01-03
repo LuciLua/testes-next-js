@@ -34,7 +34,7 @@
 
     max-width: 1500px;
 
-    color: #fff;
+    color: #787680;
 
     position: relative;
 
@@ -44,35 +44,37 @@
       position: relative;
       max-width: 100%;
 
+      line-height: 2;
 
+      ul {
+        line-height: 1.5;
 
-      ul{
-        li{
+        li {
           list-style: disc;
-          margin: 10px 30px; 
+          margin: 10px 30px;
           color: #4a4857;
-          
-          &:last-child{
+
+          &:last-child {
             margin-bottom: 50px;
           }
-          
-          a{
+
+          a {
             color: #4a4857;
             text-decoration: none;
-            &:hover{
+            &:hover {
               color: #aba9b1;
             }
           }
-          
         }
-        & > .category{
-          color: #c3c2cc;
-          margin: 10px 0;
-          list-style: none;
+      }
 
-          &:first-child{
-            margin-top: 50px;
-          }
+      ul.category {
+        color: #c3c2cc;
+        margin: 10px 0;
+        list-style: none;
+
+        &:first-child {
+          margin-top: 50px;
         }
       }
 
@@ -85,55 +87,14 @@
       }
 
       h2 {
+        color: #aba9b1;
         margin: 20px 0;
-
-        .contador {
-          display: flex;
-          margin-top: 20px;
-
-          padding: 30px;
-
-          box-shadow: 0 0 10px rgba(2, 2, 2, 0.212);
-          background-color: rgba(25, 25, 28, 0.486);
-
-          border-radius: 8px;
-
-          justify-content: space-around;
-
-          button{
-            padding: 10px 20px;
-            border-radius: 30px;
-            background-color: transparent;
-
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 800;
-
-            border:  2px solid  rgb(40, 55, 63);
-            color: rgb(83, 97, 105);
-
-
-            cursor: pointer;
-
-
-            &:hover{
-              border-color:rgb(56, 79, 92);
-              color: rgb(56, 79, 92);
-            }
-            
-            &:hover{
-              border-color:rgb(72, 96, 110);
-              color: rgb(72, 96, 110);
-            }
-
-          }
-        }
       }
 
       p {
         max-width: 1000px;
-        line-height: 2;
         text-indent: 50px;
-        color: #787680;
+
         text-align: justify;
 
         display: flex;
@@ -160,6 +121,8 @@
 
         max-width: 100%;
         position: relative;
+
+        line-height: 2;
 
         &::-webkit-scrollbar {
           height: 3px;
