@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 import styles from "../styles/learn.module.scss";
 
@@ -49,11 +50,74 @@ function Learn() {
                             </div>
                         </p>
                         <h1>
-                            useState()
+                            Hooks
                         </h1>
                         <p>
-                            useState is a Hook, I don&apos;t know explained what is it especifically, but this can be help you while your application need of memoria, well... I can have a example:
+                            useState is a Hook, I don&apos;t know explained what is it especifically, but this can be help you while your application need of memoria. Hooks are identified by the word: &apos;use&apos; before the rest.
+                            Exists two types of Hooks classified by oficial documentation of react:
                         </p>
+                        <ul>
+                            <li className={styles.category}>
+                                Basic Hooks
+                                <li>
+                                    <Link href={'#useState'}>
+                                        useState()
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href={'#useEffect'}>
+                                        useEffect()
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href={'#useContext'}>
+                                        useContext()
+                                    </Link>
+                                </li>
+                            </li>
+                            <li className={styles.category}>
+                                Additional Hooks
+                                <li>
+                                    <Link href={'#useReducer'}>
+                                        useReducer()
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href={'#useCallback'}>
+                                        useCallback()
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href={'#useMemo'}>
+                                        useMemo()
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href={'#useRef'}>
+                                        useRef()
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href={'#useEmperativeHandle'}>
+                                        useEmperativeHandle()
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href={'#useLayoutEffect'}>
+                                        useLayoutEffect()
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href={'#useDebugValue'}>
+                                        useDebugValue()
+                                    </Link>
+                                </li>
+                            </li>
+                        </ul>
+
+                        <h2 id="useState">
+                            useState()
+                        </h2>
                         <p>
                             I have a counter, the functions are created with basic of Javascript, but... always that the on click in some element the variable is updated only in console, but not in renderization of the page... Well we can use the Hook useState(), this hook will alert your browser when it necessary update some variable.
                         </p>

@@ -44,6 +44,38 @@
       position: relative;
       max-width: 100%;
 
+
+
+      ul{
+        li{
+          list-style: disc;
+          margin: 10px 30px; 
+          color: #4a4857;
+          
+          &:last-child{
+            margin-bottom: 50px;
+          }
+          
+          a{
+            color: #4a4857;
+            text-decoration: none;
+            &:hover{
+              color: #aba9b1;
+            }
+          }
+          
+        }
+        & > .category{
+          color: #c3c2cc;
+          margin: 10px 0;
+          list-style: none;
+
+          &:first-child{
+            margin-top: 50px;
+          }
+        }
+      }
+
       h1 {
         margin: 40px 0;
         width: 100%;
