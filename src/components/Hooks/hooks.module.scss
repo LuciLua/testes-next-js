@@ -11,6 +11,18 @@
 
   justify-content: space-around;
 
+  input {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(2, 2, 2, 0.672);
+    background-color: rgba(25, 25, 28, 0.486);
+
+    padding: 10px 20px;
+    color: rgb(121, 128, 133);
+
+    outline: none;
+  }
+
   button {
     padding: 10px 20px;
     border-radius: 30px;
