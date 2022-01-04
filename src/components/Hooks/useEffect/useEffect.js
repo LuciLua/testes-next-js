@@ -2,8 +2,6 @@ import styles from "../hooks.module.scss";
 import { useEffect } from "react";
 
 function ApplicationUseEffect() {
-<<<<<<< HEAD
-
   const [repositories, setRepositories] = useState([]);
 
   // 2 parametros
@@ -21,9 +19,6 @@ function ApplicationUseEffect() {
   }, []); // array vazio melhor opção, executa apenas 1 vez. garnte apenas 1 load inicial
 
   // 15:00
-
-=======
->>>>>>> master
   return (
     <div className={styles.container}>
       <p>Application useEffect</p>
