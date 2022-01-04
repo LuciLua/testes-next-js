@@ -1,6 +1,5 @@
 import styles from "../hooks.module.scss";
-import { useEffect, useState } from "react";
-import { useNome } from "../../../context/NomeContext";
+import { useState } from "react";
 
 function ApplicationUseState() {
 
@@ -30,20 +29,6 @@ function ApplicationUseState() {
 
   //   document.getElementById('dolarCurrentValue').innerHTML = dolarEmReal
   // }
-
-
-  const [nome, setNome] = useNome();
-
-  useEffect(() => {
-    const userStorage = localStorage.getItem("nome")
-    if(userStorage){
-      setNome(JSON.parse(userStorage))
-    } else{
-      setNome({
-        name: ''
-      })
-    }
-  }, []);
 
   return (
     <>
