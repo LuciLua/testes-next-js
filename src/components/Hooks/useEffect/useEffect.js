@@ -1,7 +1,8 @@
 import styles from "../hooks.module.scss";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 function ApplicationUseEffect() {
+<<<<<<< HEAD
 
   const [repositories, setRepositories] = useState([]);
 
@@ -21,16 +22,11 @@ function ApplicationUseEffect() {
 
   // 15:00
 
+=======
+>>>>>>> master
   return (
     <div className={styles.container}>
       <p>Application useEffect</p>
-      <ul>
-        {repositories.map(repo => (
-          <li key={repo.id}>
-            {repo.name}
-          </li>
-        ))}
-      </ul>
     </div>
   );
 }
