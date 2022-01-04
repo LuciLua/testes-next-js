@@ -21,7 +21,6 @@ function ApplicationUseEffect() {
 
   // 15:00
 
-
   return (
     <div className={styles.container}>
       <p>Application useEffect</p>
