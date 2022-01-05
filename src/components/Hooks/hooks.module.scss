@@ -1,5 +1,7 @@
 .container {
   display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
   margin-top: 20px;
 
   padding: 30px;
@@ -9,7 +11,78 @@
 
   border-radius: 8px;
 
-  justify-content: space-around;
+
+  overflow-y: scroll;
+  max-height: 400px;
+  position: relative;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    background-color: #3a393d;
+    border-radius: 30px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background-color: #1e1d1f;
+  }
+
+
+  .selectPage{
+    background-color: #111111de;
+    width: 100%;
+    height: fit-content;
+    position: relative;
+
+    display: flex;
+
+    padding: 5px 15px;
+
+    .eachPage{
+      background-color: #1e1d1f;
+      margin: 0 3px;
+      border-radius: 3px;
+
+      width: 30px;
+      height: 30px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      position: relative;
+
+      font-size: 18px;
+
+      cursor: pointer;
+
+      &:hover{
+        background-color: #504f4fde;
+      }
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style: none;
+
+    li {
+      background-color: #111111de;
+      padding: 10px 25px;
+      font-size: 15px;
+
+      margin: 4px;
+
+      a {
+        color: #4a4857;
+        text-decoration: none;
+        &:hover {
+          color: #aba9b1;
+        }
+      }
+    }
+  }
 
   input {
     border: none;
@@ -33,6 +106,9 @@
 
     border: 2px solid rgb(40, 55, 63);
     color: rgb(83, 97, 105);
+
+    width: fit-content;
+    height: fit-content;
 
     cursor: pointer;
 
