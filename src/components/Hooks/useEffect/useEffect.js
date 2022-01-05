@@ -17,42 +17,24 @@ function ApplicationUseEffect() {
   // circunstancias = variaveis.. posso passar varias... userEffect so é executado quando 1 dessas variaveis mudar
   // useEffect/efeito so vai ser disparado quando repositories mudar
 
-  var numPage = 1
-
   async function getRepositories(numPage) {
-    return Axios
-      .get(`https://api.github.com/users/LuciLua/repos?page=${numPage}`)
-      .then(res => res.data)
+    const response = await fetch(`https://api.github.com/users/LuciLua/repos?page=${numPage}`)
+    const data = await response.json()
+
+    setRepositories(data)
   }
-
-
-  async function fetchRepos() {
-    await getRepositories(numPage)
-      .then(setRepositories([...repositories]))
-  }
-
-
+  
   function onChangeRepo(e){
-    console.log(e.target.textContent)
+    getRepositories(e.target.textContent)
   }
-
-
-  useEffect(() => {
-
-    fetchRepos() // esse num page precisa variar
-  }, []); // array vazio melhor opção, executa apenas 1 vez. garnte apenas 1 load inicial
-
-
-  useEffect(() => {
-  }, [getRepositories])
-
-
+  
   // 15:00
   return (
     <div className={styles.container}>
       <div className={styles.selectPage}>
-        <div className={classNames(styles.eachPage, "eachPage")} id="page1" onClick={onChangeRepo}>1</div>
-        <div className={classNames(styles.eachPage, "eachPage")} id="page2" onClick={onChangeRepo}>2</div>
+        <div className={styles.eachPage} onClick={onChangeRepo}>1</div>
+        <div className={styles.eachPage} onClick={onChangeRepo}>2</div>
+        <div className={styles.eachPage} onClick={onChangeRepo}>3</div>
       </div>
       <ul>
         {repositories.map(repo => (
