@@ -3,11 +3,6 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 // import { getRepositories } from "../../../services/Repos.services";
 
-import Axios from "axios"
-
-import classNames from 'classnames'
-
-
 function ApplicationUseEffect() {
 
   const [repositories, setRepositories] = useState([]);
@@ -17,6 +12,7 @@ function ApplicationUseEffect() {
   // circunstancias = variaveis.. posso passar varias... userEffect so é executado quando 1 dessas variaveis mudar
   // useEffect/efeito so vai ser disparado quando repositories mudar
 
+  // useEffect not used
   async function getRepositories(numPage) {
     const response = await fetch(`https://api.github.com/users/LuciLua/repos?page=${numPage}`)
     const data = await response.json()
